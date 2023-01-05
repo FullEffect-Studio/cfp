@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import ClientKnowHow from "./ClientKnowHow";
 
 const HomeBannerStyle = styled.main`
   width: 100vw;
@@ -7,6 +8,7 @@ const HomeBannerStyle = styled.main`
   background: #333;
   display: flex;
   gap: 1rem;
+  position: relative;
 
   .mainBanner {
     display: flex;
@@ -49,6 +51,7 @@ const HomeBanner = () => {
           />
         </div>
       </div>
+      <ClientKnowHow />
     </HomeBannerStyle>
   );
 };

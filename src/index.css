@@ -2,5 +2,10 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  color: rgb(73, 74, 75);
+}
+
+
+body{
+  min-height: 700px;
+  background: rgb(20, 20, 20) !important;
 }
