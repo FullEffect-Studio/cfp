@@ -8,9 +8,11 @@ const LandingPageStyle = styled.main`
 `;
 
 const LandingPage = () => {
-  return <LandingPageStyle>
-    <Home />
-  </LandingPageStyle>;
+  return (
+    <LandingPageStyle>
+      <Home />
+    </LandingPageStyle>
+  );
 };
 
 export default LandingPage;

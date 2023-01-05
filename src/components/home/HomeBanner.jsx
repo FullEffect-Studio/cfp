@@ -35,7 +35,7 @@ const HomeBanner = () => {
             Welcome to Citizen Feedback Platform
           </h2>
           <button
-            className="btn text-light"
+            className="btn text-light p-3 text-lg"
             style={{ backgroundColor: "orangered" }}
           >
             Get Started !
