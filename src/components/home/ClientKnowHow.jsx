@@ -3,14 +3,13 @@ import styled from "styled-components";
 
 const ClientKnowHowStyle = styled.main`
   width: 70vw;
-  height: 600px;
+  height: 500px;
   background-color: rgb(241, 179, 62);
   position: absolute;
   top: 90%;
   left: 15%;
   border-radius: 2rem;
   display: flex;
-  gap: 1rem;
 
   .column-1 {
     width: 50%;
@@ -18,7 +17,7 @@ const ClientKnowHowStyle = styled.main`
       display: flex;
       flex-direction: column;
       gap: 2rem;
-      color: black;
+      color: white;
       font-size: 18px;
       font-weight: 600;
       border-bottom: 0.31rem solid aliceblue;
@@ -46,17 +45,18 @@ const ClientKnowHowStyle = styled.main`
     justify-content: space-around;
     color: black;
     text-decoration: none;
+    padding: 3px;
 
     &:hover{
-      background-color: rgba(0,0,0, .9);
-      color: grey;
+      background-color: white;
+      color: #333;
     }
   }
 
   .report-list{
     display: flex;
     flex-direction: column;
-    gap: 2rem;
+    gap: .7rem;
   }
 `;
 
@@ -65,25 +65,25 @@ const ClientKnowHow = () => {
     <ClientKnowHowStyle>
       <div className="column-1">
         <ol className="steps-to-report">
-          <h3>Steps to report a problem</h3>
+          <h3 className="text-secondary">Steps to report a problem</h3>
           <li>Lorem ipsum dolor sit amet consectetur adipisicing!</li>
           <li>Lorem, ipsum dolor sit amet adipisicing.</li>
           <li>Lorem ipsum dolor sit amet coelit.</li>
           <li>Lorem ipsum dolor, sit amet consectetu</li>
           <li>Lorem ipsum dolor sit amet consectetur.</li>
         </ol>
-        <div className="row some-statistics">
-          <div className="col-md-2">
+        <div className="row some-statistics" style={{paddingLeft: "1rem", width: "100% !important"}}>
+          <div className="col-lg-4">
             {" "}
             <div className="stat-value">12,000</div>
             <div className="stat-description">Description 1</div>
           </div>
-          <div className="col-md-2">
+          <div className="col-lg-4">
             {" "}
             <div className="stat-value">5,000</div>
             <div className="stat-description">Description 2</div>
           </div>
-          <div className="col-md-2">
+          <div className="col-lg-4">
             {" "}
             <div className="stat-value">483,000</div>
             <div className="stat-description">Description 3</div>
@@ -148,6 +148,7 @@ const ClientKnowHow = () => {
             </a>
           </li>
         </ol>
+        
       </div>
     </ClientKnowHowStyle>
   );

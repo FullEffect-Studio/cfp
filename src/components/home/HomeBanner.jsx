@@ -34,12 +34,23 @@ const HomeBanner = () => {
           >
             Welcome to Citizen Feedback Platform
           </h2>
-          <button
-            className="btn text-light p-3 text-lg"
-            style={{ backgroundColor: "orangered" }}
-          >
-            Get Started !
-          </button>
+          <div className="btn-group p-3" style={{display: "flex", gap: "1rem"}}>
+            <button
+              className="btn text-light p-3 text-sm"
+              style={{ backgroundColor: "orangered" }}
+            >
+              Administrator Login
+            </button>
+            <button
+              className="btn text-light p-3 text-sm"
+              style={{ backgroundColor: "purple" }}
+            >
+              Community Worker Login
+            </button>
+            <button className="btn btn-danger text-light p-3 text-md">
+              Public Official Login
+            </button>
+          </div>
         </div>
         <div className="report-img" style={{ paddingTop: "3rem" }}>
           <img
