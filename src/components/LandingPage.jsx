@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import Home from "./home/Home";
 
 const LandingPageStyle = styled.main`
   width: 100vw;
@@ -8,7 +9,7 @@ const LandingPageStyle = styled.main`
 
 const LandingPage = () => {
   return <LandingPageStyle>
-    
+    <Home />
   </LandingPageStyle>;
 };
 
