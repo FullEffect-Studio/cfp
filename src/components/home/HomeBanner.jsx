@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import styled from "styled-components";
 import ClientKnowHow from "./ClientKnowHow";
 import { Container } from "react-bootstrap";
@@ -73,6 +73,7 @@ const HomeBannerStyle = styled.main`
   
 `;
 const HomeBanner = () => {
+  const [show, setShow] = useState(false)
   return (
     <HomeBannerStyle>
       <Container>
@@ -91,6 +92,7 @@ const HomeBanner = () => {
             <button
               className="btn btn-lg text-light p-3 text-lg"
               style={{ backgroundColor: "orangered" }}
+              onClick = {()=>setShow(!show)}
             >
               Get Started !
             </button>
