@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import ClientKnowHow from "./ClientKnowHow";
+import { Container } from "react-bootstrap";
 
 const HomeBannerStyle = styled.main`
   width: 100vw;
@@ -26,6 +27,7 @@ const HomeBannerStyle = styled.main`
 const HomeBanner = () => {
   return (
     <HomeBannerStyle>
+      <Container>
       <div className="mainBanner">
         <div className="greeting">
           <h2
@@ -51,6 +53,7 @@ const HomeBanner = () => {
           />
         </div>
       </div>
+      </Container>
       <ClientKnowHow />
     </HomeBannerStyle>
   );
