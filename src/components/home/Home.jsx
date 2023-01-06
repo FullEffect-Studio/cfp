@@ -1,5 +1,6 @@
 import React from 'react'
 import HomeBanner from './HomeBanner'
+import ItemsGroup from './ItemsGroup'
 import NaviBar from './Navibar'
 import ReportAProblem from './ReportAProblem'
 
@@ -10,7 +11,8 @@ const Home = () => {
         <NaviBar />
         <HomeBanner /> 
         <ReportAProblem /> 
-        
+        <ItemsGroup />
+
     </div>
   )
 }
