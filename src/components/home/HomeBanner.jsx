@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import styled from "styled-components";
 import ClientKnowHow from "./ClientKnowHow";
 import { Container } from "react-bootstrap";
+import {useNavigate} from "react-router-dom"
 
 const HomeBannerStyle = styled.main`
   width: 100vw;
@@ -74,6 +75,10 @@ const HomeBannerStyle = styled.main`
 `;
 const HomeBanner = () => {
   const [show, setShow] = useState(false)
+  const navigate = useNavigate()
+  const handleGetStarted = () =>{
+    navigate("auth/admin/signin/")
+  }
   return (
     <HomeBannerStyle>
       <Container>
@@ -92,7 +97,7 @@ const HomeBanner = () => {
             <button
               className="btn btn-lg text-light p-3 text-lg"
               style={{ backgroundColor: "orangered" }}
-              onClick = {()=>setShow(!show)}
+              onClick = {handleGetStarted}
             >
               Get Started !
             </button>
