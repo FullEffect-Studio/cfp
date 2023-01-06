@@ -5,31 +5,26 @@ import NavDropdown from 'react-bootstrap/NavDropdown';
 
 function NaviBar() {
   return (
-    <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
+    <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark"  data-scroll-section>
       <Container>
         <Navbar.Brand href="#home">Citizen Platform</Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="me-auto">
-            <Nav.Link href="#features">Features</Nav.Link>
-            <Nav.Link href="#pricing">Pricing</Nav.Link>
-            <NavDropdown title="Dropdown" id="collasible-nav-dropdown">
-              <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
+            <Nav.Link href="#features">Sign In</Nav.Link>
+            <Nav.Link href="#pricing">Report A Problem</Nav.Link>
+            <NavDropdown title="Sign In" id="collasible-nav-dropdown">
+              <NavDropdown.Item href="#action/3.1">Sign in As Community Worker</NavDropdown.Item>
               <NavDropdown.Item href="#action/3.2">
-                Another action
+                Sign In as Public Officer
               </NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
+              <NavDropdown.Item href="#action/3.3">Sign up as Community Worker</NavDropdown.Item>
+              <NavDropdown.Item href="#action/3.3">Sign up as Public Official</NavDropdown.Item>
               <NavDropdown.Divider />
               <NavDropdown.Item href="#action/3.4">
-                Separated link
+                Report a problem
               </NavDropdown.Item>
             </NavDropdown>
-          </Nav>
-          <Nav>
-            <Nav.Link href="#deets">More deets</Nav.Link>
-            <Nav.Link eventKey={2} href="#memes">
-              Dank memes
-            </Nav.Link>
           </Nav>
         </Navbar.Collapse>
       </Container>

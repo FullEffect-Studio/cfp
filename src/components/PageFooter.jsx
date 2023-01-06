@@ -107,7 +107,6 @@ const PageFooter = () => {
               alignItems: "center",
             }}
           >
-            <span className="text-light">Connect with William</span>
             <BsFacebook size="40px" />
             <BsGithub size="40px" />
             <BsLinkedin size="40px" />
