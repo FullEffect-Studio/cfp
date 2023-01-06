@@ -5,7 +5,7 @@ import "./index.css"
 
 export const App = () => {
   return (
-    <div>
+    <div data-scroll-container>
       <Router>
         <Routes>
           <Route path="/" element={<LandingPage />} />

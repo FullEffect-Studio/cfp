@@ -77,7 +77,7 @@ const HomeBanner = () => {
   return (
     <HomeBannerStyle>
       <Container>
-        <div className="mainBanner">
+        <div className="mainBanner" data-scroll-section>
           <div className="greeting">
             <h2
               className="text-light text-center d-flex justify-content-center align-items-center greeting-message"
