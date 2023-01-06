@@ -7,7 +7,7 @@ const PageFooterStyled = styled.footer`
   width: 100vw;
   height: 60vh;
   background: #333;
-  position: relative;
+  position: static;
   bottom: 0;
 
   a {
