@@ -21,8 +21,8 @@ const ClientKnowHowStyle = styled.main`
       color: white;
       font-size: 18px;
       font-weight: 600;
-      // border-bottom: 0.31rem solid aliceblue;
 
+      
       & li:nth-of-type(5) {
         padding-bottom: 1rem;
       }
@@ -60,6 +60,22 @@ const ClientKnowHowStyle = styled.main`
     gap: 0.7rem;
     align-items: center;
   }
+
+  @media screen and (max-width: 600px){
+    width: 85vw;
+    height: max-content;
+    flex-direction: column;
+    top: 95%;
+    left: 8%;
+
+    .column-1 {
+      width: 100%;
+    }
+    .column-2 {
+      width: 100%;
+    }
+  }
+
 `;
 
 const ClientKnowHow = () => {
