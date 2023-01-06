@@ -14,6 +14,25 @@ const PageFooterStyled = styled.footer`
     text-decoration: none;
     color: white;
   }
+
+  @media screen and (max-width: 600px){
+    height: max-content;
+    .row{
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        justify-items: center;
+        text-align: center;
+    }
+
+    .col-md-3{
+        width: 100%;
+    }
+
+    .donate-box{
+        width: 100%
+    }
+  }
 `;
 
 const PageFooter = () => {
@@ -27,7 +46,7 @@ const PageFooter = () => {
           <div className="col-md-3 text-light">
             <p>
               Mapping and reporting street problems to the councils responsible
-              for fixing them – anywhere in the UK.
+              for fixing them – anywhere in Ghana.
             </p>
           </div>
           <div className="col-md-3">
@@ -63,8 +82,8 @@ const PageFooter = () => {
             </ol>
           </div>
           <div
-            className="col-md-3 p-3"
-            style={{ width: "20%", backgroundColor: "orange" }}
+            className="col-md-3 p-3 donate-box"
+            style={{ backgroundColor: "orange" }}
           >
             <p>
               Your Donations help brings more features to improve your
@@ -77,8 +96,8 @@ const PageFooter = () => {
         </div>
         <hr style={{color: "orange", height: "1.55rem"}} />
 
-        <div className="text-center" style={{display: "flex", gap: "15px",justifyContent: "center", height: "3rem", alignItems: "center"}}>
-            <span>Connect with William Dreams</span>
+        <div className="text-center pb-4" style={{display: "flex", gap: "15px",justifyContent: "center", height: "3rem", alignItems: "center"}}>
+            <span className="text-light">Connect with William</span>
             <BsFacebook size="40px" />
             <BsGithub size="40px" />
             <BsLinkedin size="40px" />
