@@ -78,6 +78,7 @@ const PageFooter = () => {
         <hr style={{color: "orange", height: "1.55rem"}} />
 
         <div className="text-center" style={{display: "flex", gap: "15px",justifyContent: "center", height: "3rem", alignItems: "center"}}>
+            <span>Connect with William Dreams</span>
             <BsFacebook size="40px" />
             <BsGithub size="40px" />
             <BsLinkedin size="40px" />
