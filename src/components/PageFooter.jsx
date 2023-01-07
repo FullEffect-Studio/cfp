@@ -37,8 +37,8 @@ const PageFooterStyled = styled.footer`
 
 const PageFooter = () => {
   return (
-    <PageFooterStyled>
-      <div data-scroll-section>
+    <PageFooterStyled data-scroll-section>
+      <div>
         <Container>
           <a href="/" style={{ color: "white", textDecoration: "none" }}>
             <h2 className="p-3">CitizenFeedbackPlatform</h2>

@@ -45,8 +45,8 @@ const ReportAProblemStyle = styled.div`
 `;
 const ReportAProblem = () => {
   return (
-    <ReportAProblemStyle>
-      <div className="p-4 main-container" data-scroll-section>
+    <ReportAProblemStyle data-scroll-section>
+      <div className="p-4 main-container">
         <p
           className="paragraph-container bg-secondary p-5 text-light"
           style={{ height: "90%", fontSize: "19px" }}

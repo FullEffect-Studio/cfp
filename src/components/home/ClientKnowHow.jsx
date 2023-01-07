@@ -80,7 +80,7 @@ const ClientKnowHowStyle = styled.main`
 
 const ClientKnowHow = () => {
   return (
-    <ClientKnowHowStyle>
+    <ClientKnowHowStyle data-scroll-section>
       <div className="column-1">
         <ol className="steps-to-report" style={{ listStyleType: "none" }}>
           <h3 className="text-secondary">Steps to report a problem</h3>

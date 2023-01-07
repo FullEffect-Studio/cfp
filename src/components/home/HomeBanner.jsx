@@ -80,7 +80,7 @@ const HomeBanner = () => {
     navigate("auth/admin/signin/")
   }
   return (
-    <HomeBannerStyle>
+    <HomeBannerStyle data-scroll-section>
       <Container>
         <div className="mainBanner" data-scroll-section>
           <div className="greeting">

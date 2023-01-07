@@ -22,9 +22,9 @@ const StyledGroup = styled.section`
 `;
 const ItemsGroup = () => {
   return (
-    <StyledGroup>
+    <StyledGroup data-scroll-section>
       <Container>
-        <div className="row" data-scroll-section>
+        <div className="row">
           <div className="col-md-6 text-justify">
             <h3 style={{marginTop:"1.3rem", textAlign: "center"}}>Free statistics for councils</h3>
             <p style={{width: "90%", margin: "1rem auto", fontSize:'22px'}}>
