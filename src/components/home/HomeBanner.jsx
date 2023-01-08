@@ -74,7 +74,6 @@ const HomeBannerStyle = styled.main`
   
 `;
 const HomeBanner = () => {
-  const [show, setShow] = useState(false)
   const navigate = useNavigate()
   const handleGetStarted = () =>{
     navigate("auth/admin/signin/")
@@ -91,8 +90,8 @@ const HomeBanner = () => {
               Welcome to Citizen Feedback Platform
             </h2>
               <p className="text-light w-90">
-                Mapping and reporting street problems to the councils
-                responsible for fixing them – anywhere in Ghana.
+                Mapping and reporting community problems to the Authorities  
+                responsible for resolving them – anywhere in Ghana.
               </p>
             <button
               className="btn btn-lg text-light p-3 text-lg"

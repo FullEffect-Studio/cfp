@@ -66,18 +66,19 @@ const ReportAProblem = () => {
             paddingTop: "1rem",
           }}
         >
-          <h1>Have found an issue in your community NOW!!</h1>
-          <h4>
+          <h1 className="text-center text-light">Report A Problem</h1>
+          <h4 className="">
             (like graffiti, fly tipping, broken paving slabs, or street
             lighting)
           </h4>
-          <h5>Enter a nearby postcode, or street name and area:</h5>
-          <h6>Like Cape Coast, UCC hospital, Ahwiaa road</h6>
+          <h5 className="text-center"><sup>**</sup>Enter a nearby postcode, or street name and area:</h5>
+          <h6 className="text-center">Like Cape Coast, UCC hospital, Ahwiaa road</h6>
           <div className="input" style={{ display: "flex" }}>
             <input
               className="form-control"
               type="text"
               style={{ height: "4rem", width: "80%" }}
+              placeholder = "Name of the place"
             />
             <input className="btn btn-dark" type="button" value="Go" />
           </div>

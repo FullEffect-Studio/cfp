@@ -30,7 +30,7 @@ const ItemsGroup = () => {
             <p style={{width: "90%", margin: "1rem auto", fontSize:'22px'}}>
               Explore detailed statistics on the <span style={{borderBottom: "3px solid orange", color: "orange"}}>CitizenFeedbackPlatform</span> councils dashboard — for
               free. What do people report most? How’s your response rate? And
-              how do you compare to other UK councils?
+              how do you compare to other places in Ghana?
             </p>
             <button className="btn btn-secondary btn-lg">Login Now</button>
           </div>
