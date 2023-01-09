@@ -12,14 +12,11 @@ function NaviBar() {
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="me-auto">
-            <Nav.Link href="#pricing">Report A Problem</Nav.Link>
+            <Nav.Link>Report A Problem</Nav.Link>
             <NavDropdown title="Sign In As" id="collasible-nav-dropdown">
-              <NavDropdown.Item href="#action/3.1"><Link to="auth/admin/signin/">Sign in as an Admin</Link></NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.2">
-                Sign In as Public Officer
-              </NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.3">Sign up as Community Worker</NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.3">Sign up as Public Official</NavDropdown.Item>
+              <NavDropdown.Item><Link to="auth/admin/signin/">Sign in as an Admin</Link></NavDropdown.Item>
+              <NavDropdown.Item><Link to="auth/community-worker/signin/">Sign up as Community Worker</Link></NavDropdown.Item>
+              <NavDropdown.Item><Link to="auth/public-officer/signin/">Sign up as Public Official</Link></NavDropdown.Item>
               <NavDropdown.Divider />
               <NavDropdown.Item href="#action/3.4">
                 Report a problem
