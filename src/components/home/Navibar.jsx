@@ -2,12 +2,14 @@ import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
+import { useNavigate } from 'react-router-dom';
 
 function NaviBar() {
+  const navigate = useNavigate()
   return (
     <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark"  data-scroll-section>
       <Container>
-        <Navbar.Brand href="#home">Citizen Platform</Navbar.Brand>
+        <Navbar.Brand onClick={()=>{navigate("/")}} style={{cursor: "pointer"}}>Citizen Platform</Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="me-auto">
