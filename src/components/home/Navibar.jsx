@@ -2,21 +2,19 @@ import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
-import { useNavigate } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 function NaviBar() {
-  const navigate = useNavigate()
   return (
     <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark"  data-scroll-section>
       <Container>
-        <Navbar.Brand onClick={()=>{navigate("/")}} style={{cursor: "pointer"}}>Citizen Platform</Navbar.Brand>
+        <Navbar.Brand style={{cursor: "pointer"}}>Citizen Platform</Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="me-auto">
-            <Nav.Link href="#features">Sign In</Nav.Link>
             <Nav.Link href="#pricing">Report A Problem</Nav.Link>
-            <NavDropdown title="Sign In" id="collasible-nav-dropdown">
-              <NavDropdown.Item href="#action/3.1">Sign in As Community Worker</NavDropdown.Item>
+            <NavDropdown title="Sign In As" id="collasible-nav-dropdown">
+              <NavDropdown.Item href="#action/3.1"><Link to="auth/admin/signin/">Sign in as an Admin</Link></NavDropdown.Item>
               <NavDropdown.Item href="#action/3.2">
                 Sign In as Public Officer
               </NavDropdown.Item>
