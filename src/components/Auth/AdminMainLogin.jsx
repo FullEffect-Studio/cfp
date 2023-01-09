@@ -17,13 +17,19 @@ const StyledForm = styled.main`
 
   .col-md-5 {
     background: #333;
+
+
+    & h3{
+      padding-top: 4rem;
+     } 
+    
     & form {
       width: 80%;
       display: flex;
       flex-direction: column;
       gap: 1rem;
       height: 60%;
-      margin: 6rem auto;
+      margin: 3rem auto;
 
       & .d-flex {
         height: 3rem;
@@ -33,6 +39,7 @@ const StyledForm = styled.main`
         background: green;
         
       }
+
     }
   }
 `;
@@ -44,13 +51,14 @@ const AdminMainLogin = () => {
           <img src="/images/womanhone.jpeg" alt="my-image" />
         </div>
         <div className="col-md-5">
+          <h3 className="text-warning text-center">Admin Login Page</h3>
           <form action="" className="text-light">
-            <div className="d-flex">
+            <div className="d-flex form-group">
 
             <label htmlFor="email">Email</label>
             <input className="form-control" type="text" name="email" />
             </div>
-            <div className="d-flex">
+            <div className="d-flex form-group">
             <label htmlFor="password">Password</label>
             <input className="form-control" type="password" name="password" />
             </div>
