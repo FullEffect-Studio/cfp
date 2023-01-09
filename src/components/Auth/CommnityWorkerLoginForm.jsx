@@ -1,5 +1,7 @@
 import React from "react";
 import styled from "styled-components";
+import NaviBar from "../home/Navibar";
+import PageFooter from "../PageFooter";
 
 const StyledForm = styled.main`
   width: 80vw;
@@ -18,6 +20,11 @@ const StyledForm = styled.main`
 
   .col-md-5 {
     background: #333;
+
+    & h3{
+        padding-top: 4rem;
+    }
+
     & form {
       width: 80%;
       display: flex;
@@ -39,12 +46,15 @@ const StyledForm = styled.main`
 `;
 const CommnityWorkerLoginForm = () => {
   return (
+    <>
+    <NaviBar />
     <StyledForm>
       <div className="row">
         <div className="col-md-7">
           <img src="/images/womanhone.jpeg" alt="my-image" />
         </div>
         <div className="col-md-5">
+            <h3 className="text-warning text-center">Community Worker Login Page</h3>
           <form action="" className="text-light">
             <div className="d-flex">
               <label htmlFor="email">Email</label>
@@ -64,6 +74,8 @@ const CommnityWorkerLoginForm = () => {
         </div>
       </div>
     </StyledForm>
+    <PageFooter />
+    </>
   );
 };
 
