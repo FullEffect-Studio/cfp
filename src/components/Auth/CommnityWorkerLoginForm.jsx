@@ -5,7 +5,7 @@ import PageFooter from "../PageFooter";
 
 const StyledForm = styled.main`
   width: 80vw;
-  height: 500px;
+  height: max-content;
   background: rgb(241, 179, 62);
   margin: 3rem auto;
 
