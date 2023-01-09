@@ -2,7 +2,7 @@ import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import NavDropdown from "react-bootstrap/NavDropdown";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import styled from "styled-components";
 
 const NavibarStyle = styled.nav`
@@ -13,6 +13,8 @@ const NavibarStyle = styled.nav`
 `;
 
 function NaviBar() {
+  const navigate = useNavigate()
+
   return (
     <NavibarStyle>
       <Navbar
@@ -23,7 +25,7 @@ function NaviBar() {
         data-scroll-section
       >
         <Container>
-          <Navbar.Brand style={{ cursor: "pointer" }}>
+          <Navbar.Brand style={{ cursor: "pointer" }} onClick={()=> navigate("/")}>
             Citizen Platform
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="responsive-navbar-nav" />
