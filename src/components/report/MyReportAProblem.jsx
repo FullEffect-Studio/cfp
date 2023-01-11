@@ -3,6 +3,8 @@ import { MapContainer, Marker, Popup, TileLayer, useMapEvents } from "react-leaf
 import styled from "styled-components";
 import NaviBar from "../home/Navibar";
 import PageFooter from "../PageFooter";
+import markerIconPng from "leaflet/dist/images/marker-icon.png"
+import {Icon} from 'leaflet'
 
 function LocationMarker() {
   const [position, setPosition] = useState(null)
