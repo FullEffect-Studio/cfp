@@ -75,6 +75,12 @@ const StyledReportPage = styled.main`
     background: green;
     height: 100vh;
   }
+
+  @media screen and (max-width: 600px){
+    display:flex;
+    flex-direction: column-reverse;
+  }
+
 `;
 
 const ReportAProblem = () => {
@@ -82,7 +88,7 @@ const ReportAProblem = () => {
     <>
       <NaviBar />
       <StyledReportPage>
-        <div className="row">
+        <div className="row report-page-row">
           <div className="col-md-5">kjc skm</div>
           <div className="col-md-7">
             <MapContainer

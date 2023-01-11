@@ -4,6 +4,7 @@ import Navbar from "react-bootstrap/Navbar";
 import NavDropdown from "react-bootstrap/NavDropdown";
 import { Link, useNavigate } from "react-router-dom";
 import styled from "styled-components";
+import {FaSun,FaMoon} from "react-icons/fa"
 
 const NavibarStyle = styled.nav`
   .navdropper-link a {
@@ -53,7 +54,10 @@ function NaviBar() {
               </NavDropdown>
             </Nav>
           </Navbar.Collapse>
+          <FaSun color="white" />
+          <FaMoon color="white" />
         </Container>
+
       </Navbar>
     </NavibarStyle>
   );
