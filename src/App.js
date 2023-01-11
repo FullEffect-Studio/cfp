@@ -4,7 +4,7 @@ import AdminLoginForm from "./components/Auth/AdminLoginForm";
 import CommnityWorkerLoginForm from "./components/Auth/CommnityWorkerLoginForm";
 import PublicOfficerLoginForm from "./components/Auth/PublicOfficerLoginForm";
 import LandingPage from "./components/LandingPage";
-import ReportAProblem from "./components/report/ReportAProblem";
+import ReportAProblem from "./components/report/MyReportAProblem";
 import "./index.css"
 
 export const App = () => {

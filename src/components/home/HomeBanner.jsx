@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import styled from "styled-components";
 import ClientKnowHow from "./ClientKnowHow";
 import { Container } from "react-bootstrap";
-import {useNavigate} from "react-router-dom"
+import { useNavigate, Link } from "react-router-dom";
 
 const HomeBannerStyle = styled.main`
   width: 100vw;
@@ -73,10 +73,10 @@ const HomeBannerStyle = styled.main`
   
 `;
 const HomeBanner = () => {
-  const navigate = useNavigate()
-  const handleGetStarted = () =>{
-    navigate("auth/admin/signin/")
-  }
+  const navigate = useNavigate();
+  const handleGetStarted = () => {
+    navigate("/admin/signin/");
+  };
   return (
     <HomeBannerStyle data-scroll-section>
       <Container>
@@ -88,17 +88,18 @@ const HomeBanner = () => {
             >
               Welcome to Citizen Feedback Platform
             </h2>
-              <p className="text-light w-90">
-                Mapping and reporting community problems to the Authorities  
-                responsible for resolving them – anywhere in Ghana.
-              </p>
-            <button
-              className="btn btn-lg text-light p-3 text-lg"
-              style={{ backgroundColor: "orangered" }}
-              onClick = {handleGetStarted}
-            >
-              Get Started !
-            </button>
+            <p className="text-light w-90">
+              Mapping and reporting community problems to the Authorities
+              responsible for resolving them – anywhere in Ghana.
+            </p>
+            <Link to="/admin/signin/">
+              <button
+                className="btn btn-lg text-light p-3 text-lg"
+                style={{ backgroundColor: "orangered" }}
+              >
+                Get Started !
+              </button>
+            </Link>
           </div>
           <div className="report-img" style={{ paddingTop: "3rem" }}>
             <img
