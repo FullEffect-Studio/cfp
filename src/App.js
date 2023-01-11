@@ -13,9 +13,9 @@ export const App = () => {
       <Router>
         <Routes>
           <Route path="/" element={<LandingPage />} />
-          <Route path="auth/admin/signin/" element={<AdminLoginForm />} />
-          <Route path="auth/community-worker/signin/" element={<CommnityWorkerLoginForm />} />
-          <Route path="auth/public-officer/signin/" element={<PublicOfficerLoginForm />} />
+          <Route path="/admin/signin/" element={<AdminLoginForm />} />
+          <Route path="/community-worker/signin/" element={<CommnityWorkerLoginForm />} />
+          <Route path="/public-officer/signin/" element={<PublicOfficerLoginForm />} />
           <Route path="report-a-problem/" element={<ReportAProblem />} />
         </Routes>
       </Router>

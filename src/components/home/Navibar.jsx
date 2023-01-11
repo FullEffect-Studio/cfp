@@ -34,15 +34,15 @@ function NaviBar() {
               <Nav.Link>Report A Problem</Nav.Link>
               <NavDropdown title="Sign In As" id="collasible-nav-dropdown">
                 <NavDropdown.Item className="navdropper-link">
-                  <Link to="auth/admin/signin/">Sign in as an Admin</Link>
+                  <Link to="/admin/signin/">Sign in as an Admin</Link>
                 </NavDropdown.Item>
                 <NavDropdown.Item className="navdropper-link">
-                  <Link to="auth/community-worker/signin/">
+                  <Link to="/community-worker/signin/">
                     Sign up as Community Worker
                   </Link>
                 </NavDropdown.Item>
                 <NavDropdown.Item className="navdropper-link">
-                  <Link to="auth/public-officer/signin/">
+                  <Link to="/public-officer/signin/">
                     Sign up as Public Official
                   </Link>
                 </NavDropdown.Item>
