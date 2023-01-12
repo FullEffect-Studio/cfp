@@ -1,4 +1,4 @@
-import { React, createContext } from "react";
+import { React, createContext, useState } from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import AdminLoginForm from "./components/Auth/AdminLoginForm";
 import CommnityWorkerLoginForm from "./components/Auth/CommnityWorkerLoginForm";
@@ -8,12 +8,13 @@ import ReportAProblem from "./components/report/MyReportAProblem";
 import "./index.css";
 import "leaflet/dist/leaflet.css";
 
-const AppContext = createContext(null);
+export const ThemeTogglerContext = createContext(null);
 
 export const App = () => {
+  const [darkmode, setDarkMode] = useState(false)
   return (
     <div data-scroll-container>
-      <AppContext.Provider>
+      <ThemeTogglerContext.Provider value={{darkmode, setDarkMode}}>
         <Router>
           <Routes>
             <Route path="/" element={<LandingPage />} />
@@ -29,7 +30,7 @@ export const App = () => {
             <Route path="/report-a-problem/" element={<ReportAProblem />} />
           </Routes>
         </Router>
-      </AppContext.Provider>
+      </ThemeTogglerContext.Provider>
     </div>
   );
 };
