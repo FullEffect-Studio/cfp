@@ -23,8 +23,8 @@ function NaviBar() {
       <Navbar
         collapseOnSelect
         expand="lg"
-        bg={darkmode? "dark" : "light"}
-        variant={darkmode? "dark" : "light"}
+        bg={darkmode? "dark" : "dark"}
+        variant={darkmode? "dark" : "dark"}
         data-scroll-section
       >
         <Container>

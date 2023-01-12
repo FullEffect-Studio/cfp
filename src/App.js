@@ -11,7 +11,7 @@ import "leaflet/dist/leaflet.css";
 export const ThemeTogglerContext = createContext(null);
 
 export const App = () => {
-  const [darkmode, setDarkMode] = useState(false)
+  const [darkmode, setDarkMode] = useState(null)
   return (
     <div data-scroll-container>
       <ThemeTogglerContext.Provider value={{darkmode, setDarkMode}}>
