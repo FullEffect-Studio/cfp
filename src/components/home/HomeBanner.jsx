@@ -74,9 +74,7 @@ const HomeBannerStyle = styled.main`
 `;
 const HomeBanner = () => {
   const navigate = useNavigate();
-  const handleGetStarted = () => {
-    navigate("/admin/signin/");
-  };
+ 
   return (
     <HomeBannerStyle data-scroll-section>
       <Container>
