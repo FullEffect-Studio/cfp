@@ -2,7 +2,9 @@ import React, { useState } from "react";
 import styled from "styled-components";
 import ClientKnowHow from "./ClientKnowHow";
 import { Container } from "react-bootstrap";
-import { useNavigate, Link } from "react-router-dom";
+import { useContext } from "react";
+import { ThemeTogglerContext } from "../../App";
+
 
 const HomeBannerStyle = styled.main`
   width: 100vw;
@@ -73,6 +75,7 @@ const HomeBannerStyle = styled.main`
   
 `;
 const HomeBanner = () => { 
+  const {} = useContext(ThemeTogglerContext)
   return (
     <HomeBannerStyle data-scroll-section>
       <Container>
