@@ -72,9 +72,7 @@ const HomeBannerStyle = styled.main`
 
   
 `;
-const HomeBanner = () => {
-  const navigate = useNavigate();
- 
+const HomeBanner = () => { 
   return (
     <HomeBannerStyle data-scroll-section>
       <Container>
