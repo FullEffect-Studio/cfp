@@ -13,6 +13,16 @@ const NavibarStyle = styled.nav`
     text-decoration: none;
     color: black;
   }
+
+  .themeToggler{
+    @media screen and (min-width:750px){
+      display: none;
+    }
+
+    @media screen and (max-width: 754px) and (min-width: 200px){
+      position: absolute;
+    }
+  }
 `;
 
 function NaviBar() {
@@ -23,8 +33,8 @@ function NaviBar() {
       <Navbar
         collapseOnSelect
         expand="lg"
-        bg="dark"
-        variant="dark"
+        bg={darkmode? "dark" : "dark"}
+        variant={darkmode? "dark" : "dark"}
         data-scroll-section
       >
         <Container>
@@ -56,8 +66,8 @@ function NaviBar() {
               </NavDropdown>
             </Nav>
           </Navbar.Collapse>
-          <FaSun color="white" onClick={()=>setDarkMode(false)} style={darkmode?{display:""}:{display:"none"}} />
-          <FaMoon color="black" onClick={()=>setDarkMode(true)} style={darkmode?{display:"none"}:{display:""}} />
+          <FaSun className="themeToggler" color="white" onClick={()=>setDarkMode(false)} style={darkmode?{display:""}:{display:"none"}} />
+          <FaMoon className="themeToggler" color="black" onClick={()=>setDarkMode(true)} style={darkmode?{display:"none"}:{display:""}} />
         </Container>
 
       </Navbar>
