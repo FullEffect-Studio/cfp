@@ -22,7 +22,7 @@ const ReportAProblemStyle = styled.div`
   }
 
   @media screen and (max-width: 600px) {
-    margin-top: 1200px;
+    margin-top: 1400px;
     height: max-content;
 
     .main-container {
