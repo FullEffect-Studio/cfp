@@ -47,7 +47,7 @@ const HomeBannerStyle = styled.main`
   }
   
   @media screen and (max-width: 600px) {
-    height: 800px;
+    height: max-content;
     
     .mainBanner{
       flex-direction: column-reverse;
@@ -63,8 +63,8 @@ const HomeBannerStyle = styled.main`
     }
 
     .report-img img{
-      width: 460px;
-      height: 460px;
+      width: 260px;
+      height: 260px;
       padding-left: 1rem;
     }
 
@@ -76,7 +76,6 @@ const HomeBannerStyle = styled.main`
   
 `;
 const HomeBanner = () => { 
-  const {} = useContext(ThemeTogglerContext)
   return (
     <HomeBannerStyle data-scroll-section>
       <Container>
