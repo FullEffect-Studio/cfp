@@ -65,7 +65,7 @@ const ClientKnowHowStyle = styled.main`
     width: 85vw;
     height: max-content;
     flex-direction: column;
-    top: 95%;
+    top: 92%;
     left: 8%;
 
     .column-1 {
