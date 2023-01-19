@@ -64,8 +64,8 @@ const HomeBannerStyle = styled.main`
     }
 
     .report-img img{
-      width: 260px;
-      height: 260px;
+      width: 330px;
+      height: 330px;
       padding-left: 1rem;
     }
 
