@@ -63,9 +63,9 @@ const ClientKnowHowStyle = styled.main`
 
   @media screen and (max-width: 600px){
     width: 85vw;
-    height: max-content;
+    height: calc(100vh + 10rem);
     flex-direction: column;
-    top: 92%;
+    top: 97%;
     left: 8%;
 
     .column-1 {
