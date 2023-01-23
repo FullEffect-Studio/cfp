@@ -66,8 +66,6 @@ function NaviBar() {
               </NavDropdown>
             </Nav>
           </Navbar.Collapse>
-          <FaSun className="themeToggler" color="white" onClick={()=>setDarkMode(false)} style={darkmode?{display:""}:{display:"none"}} />
-          <FaMoon className="themeToggler" color="black" onClick={()=>setDarkMode(true)} style={darkmode?{display:"none"}:{display:""}} />
         </Container>
 
       </Navbar>
