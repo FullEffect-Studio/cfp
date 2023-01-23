@@ -54,7 +54,7 @@ const HomeBannerStyle = styled.main`
       justify-content: center;
       gap: 1rem;
       width: 100%;
-      height: calc(100vh + 10rem);;
+      height: 85vh;
 
       & .greeting{
         width: 100%;
