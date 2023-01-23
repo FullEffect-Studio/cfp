@@ -63,10 +63,11 @@ const ClientKnowHowStyle = styled.main`
 
   @media screen and (max-width: 600px){
     width: 85vw;
-    height: calc(100vh + 10rem);
+    height: max-content;
     flex-direction: column;
     top: 97%;
     left: 8%;
+    
 
     .column-1 {
       width: 100%;
@@ -83,7 +84,7 @@ const ClientKnowHow = () => {
     <ClientKnowHowStyle data-scroll-section>
       <div className="column-1">
         <ol className="steps-to-report" style={{ listStyleType: "none" }}>
-          <h3 className="text-secondary">Steps to report a problem</h3>
+          <h3 className="text-secondary text-center">Steps to report a problem</h3>
           <li>
             <img src="images/1.png" alt="One" width="44px" /> Lorem ipsum dolor
             sit amet consectetur!
