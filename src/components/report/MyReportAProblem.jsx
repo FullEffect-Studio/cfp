@@ -92,7 +92,7 @@ const ReportAProblem = () => {
           <div className="col-md-5">kjc skm</div>
           <div className="col-md-7">
             <MapContainer
-              center={[51.505, -0.09]}
+              center={[5.107467, -1.2430793]}
               zoom={13}
               scrollWheelZoom={true}
               style={{ width: "100%", height: "100vh" }}
