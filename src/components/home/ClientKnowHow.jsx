@@ -84,7 +84,7 @@ const ClientKnowHow = () => {
     <ClientKnowHowStyle data-scroll-section>
       <div className="column-1">
         <ol className="steps-to-report" style={{ listStyleType: "none" }}>
-          <h3 className="text-secondary text-center">Steps to report a problem</h3>
+          <h3 className="text-secondary text-center mt-3">Steps to report a problem</h3>
           <li>
             <img src="images/1.png" alt="One" width="44px" /> Lorem ipsum dolor
             sit amet consectetur!
@@ -161,7 +161,7 @@ const ClientKnowHow = () => {
         </div>
       </div>
       <div className="column-2">
-        <h3>Recently posted problems</h3>
+        <h3 className="text-center mt-5">Recently posted problems</h3>
         <ol className="report-list" style={{ listStyleType: "disc" }}>
           <li>
             <a href="/" className="report-links">
