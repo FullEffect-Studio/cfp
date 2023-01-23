@@ -69,7 +69,7 @@ const HomeBannerStyle = styled.main`
       padding-left: 1rem;
     }
 
-    h2 {
+    h2{
       font-size: 30px;
     }
   }
