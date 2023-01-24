@@ -9,11 +9,13 @@ import { Link } from "react-router-dom";
 
 const HomeBannerStyle = styled.main`
   width: 100vw;
-  height: 100vh;
+  height: 145vh;
   background: #333;
   display: flex;
   gap: 1rem;
   position: relative;
+  
+
 
 
   .report-img img{
@@ -25,14 +27,15 @@ const HomeBannerStyle = styled.main`
   .mainBanner {
     display: flex;
     gap: 1rem;
-    width: 95%;
+    // width: 95%;
     height: 90%;
     justify-content: center;
     align-items: center;
 
+    
     .greeting {
       width: 60%;
-      height: 80%;
+      height: max-content;
       text-align: center;
       padding-top: 5rem;
     }
