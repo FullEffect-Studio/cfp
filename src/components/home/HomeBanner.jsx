@@ -2,8 +2,6 @@ import React, { useState } from "react";
 import styled from "styled-components";
 import ClientKnowHow from "./ClientKnowHow";
 import { Container } from "react-bootstrap";
-import { useContext } from "react";
-import { ThemeTogglerContext } from "../../App";
 import { Link } from "react-router-dom";
 
 
