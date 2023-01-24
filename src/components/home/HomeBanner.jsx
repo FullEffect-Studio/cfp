@@ -9,7 +9,7 @@ import { Link } from "react-router-dom";
 
 const HomeBannerStyle = styled.main`
   width: 100vw;
-  height: 80vh;
+  height: 100vh;
   background: #333;
   display: flex;
   gap: 1rem;
@@ -17,8 +17,8 @@ const HomeBannerStyle = styled.main`
 
 
   .report-img img{
-    width: 400px;
-    height: 400px;
+    width: 500px;
+    height: 500px;
     padding-bottom: 1rem;
   }
 
@@ -47,14 +47,14 @@ const HomeBannerStyle = styled.main`
   }
   
   @media screen and (max-width: 600px) {
-    height: max-content;
+    height: 110vh;
     
     .mainBanner{
       flex-direction: column-reverse;
       justify-content: center;
       gap: 1rem;
       width: 100%;
-      height: 85vh;
+      height: 100vh;
 
       & .greeting{
         width: 100%;
