@@ -28,6 +28,7 @@ const ReportAProblemStyle = styled.div`
     .main-container {
       display: flex;
       flex-direction: column;
+      width: 100%;
     }
 
     .paragraph-container {
