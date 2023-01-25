@@ -7,7 +7,7 @@ import { Link } from "react-router-dom";
 
 const HomeBannerStyle = styled.main`
   width: 100vw;
-  height: 145vh;
+  height: 95vh;
   background: #333;
   display: flex;
   gap: 1rem;
@@ -45,7 +45,7 @@ const HomeBannerStyle = styled.main`
   }
   
   @media screen and (max-width: 600px) {
-    height: 145vh;
+    height: 95vh;
     margin-bottom: 110rem;
     
     .mainBanner{
@@ -73,6 +73,9 @@ const HomeBannerStyle = styled.main`
     }
   }
 
+  @media screen and (max-width:375px){
+    height: 120vh;
+  }
   
 `;
 const HomeBanner = () => { 
