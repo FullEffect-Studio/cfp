@@ -12,9 +12,6 @@ const HomeBannerStyle = styled.main`
   display: flex;
   gap: 1rem;
   position: relative;
-  
-
-
 
   .report-img img{
     width: 500px;
@@ -48,14 +45,15 @@ const HomeBannerStyle = styled.main`
   }
   
   @media screen and (max-width: 600px) {
-    height: 110vh;
+    height: 145vh;
+    margin-bottom: 110rem;
     
     .mainBanner{
       flex-direction: column-reverse;
       justify-content: center;
       gap: 1rem;
       width: 100%;
-      height: 100vh;
+      height: 85%;
 
       & .greeting{
         width: 100%;
@@ -65,8 +63,8 @@ const HomeBannerStyle = styled.main`
     }
 
     .report-img img{
-      width: 330px;
-      height: 330px;
+      width: 320px;
+      height: 320px;
       padding-left: 1rem;
     }
 
