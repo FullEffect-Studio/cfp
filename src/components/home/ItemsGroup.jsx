@@ -4,6 +4,13 @@ import styled from "styled-components";
 
 const StyledGroup = styled.section`
   margin-bottom: 3rem;
+  .col-md-6:nth-of-type(1){
+    & p{
+      font-size: 22px; 
+   }
+
+   
+  }
 
   .row {
     & .col-md-6 {
@@ -19,6 +26,14 @@ const StyledGroup = styled.section`
       }
     }
   }
+
+  @media screen and (max-width: 600px){
+    .col-md-6:nth-of-type(1){
+      & p{
+         font-size: 20px; 
+      }
+    }
+  }
 `;
 const ItemsGroup = () => {
   return (
@@ -27,12 +42,12 @@ const ItemsGroup = () => {
         <div className="row">
           <div className="col-md-6 text-justify">
             <h3 style={{marginTop:"1.3rem", textAlign: "center"}}>Free statistics for councils</h3>
-            <p style={{width: "90%", margin: "1rem auto", fontSize:'22px'}}>
+            <p style={{width: "90%", margin: "1rem auto"}}>
               Explore detailed statistics on the <span style={{borderBottom: "3px solid orange", color: "orange"}}>CitizenFeedbackPlatform</span> councils dashboard — for
               free. What do people report most? How’s your response rate? And
               how do you compare to other places in Ghana?
             </p>
-            <button className="btn btn-secondary btn-lg">Login Now</button>
+            <button className="btn btn-secondary btn-lg text-center">Login Now</button>
           </div>
           <div className="col-md-6">
             <h3 style={{marginTop:"1.5rem", textAlign: "center"}}>Go Pro</h3>
