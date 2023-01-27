@@ -45,8 +45,9 @@ const HomeBannerStyle = styled.main`
   }
   
   @media screen and (max-width: 600px) {
-    height: 95vh;
+    height: max-content ;
     margin-bottom: 110rem;
+    min-height: 160vh;
     
     .mainBanner{
       flex-direction: column-reverse;
@@ -73,9 +74,6 @@ const HomeBannerStyle = styled.main`
     }
   }
 
-  @media screen and (max-width:375px){
-    height: 120vh;
-  }
   
 `;
 const HomeBanner = () => { 
