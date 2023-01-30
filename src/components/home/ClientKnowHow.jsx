@@ -4,7 +4,7 @@ import styled from "styled-components";
 const ClientKnowHowStyle = styled.main`
   @import url("https://fonts.googleapis.com/css2?family=Rubik+Bubbles&display=swap");
   width: 70vw;
-  height: 600px;
+  height: 670px;
   background-color: rgb(241, 179, 62);
   position: absolute;
   top: 90%;
