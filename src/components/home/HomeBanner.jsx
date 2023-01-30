@@ -1,4 +1,3 @@
-import React, { useState } from "react";
 import styled from "styled-components";
 import ClientKnowHow from "./ClientKnowHow";
 import { Container } from "react-bootstrap";
@@ -47,7 +46,7 @@ const HomeBannerStyle = styled.main`
   @media screen and (max-width: 600px) {
     height: max-content ;
     margin-bottom: 110rem;
-    min-height: 160vh;
+    min-height: 140vh;
     
     .mainBanner{
       flex-direction: column-reverse;
