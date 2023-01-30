@@ -98,6 +98,7 @@ const ReportAProblem = () => {
                 gap: "10px",
                 alignItems: "center",
                 height: "4rem",
+                margin: "auto"
               }}
             >
               Use My Current Location <FaLocationArrow size="20px" />
