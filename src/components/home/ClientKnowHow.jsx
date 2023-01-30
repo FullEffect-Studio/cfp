@@ -4,7 +4,7 @@ import styled from "styled-components";
 const ClientKnowHowStyle = styled.main`
   @import url("https://fonts.googleapis.com/css2?family=Rubik+Bubbles&display=swap");
   width: 70vw;
-  height: 600px;
+  height: 670px;
   background-color: rgb(241, 179, 62);
   position: absolute;
   top: 90%;
@@ -71,11 +71,18 @@ const ClientKnowHowStyle = styled.main`
 
     .column-1 {
       width: 100%;
+
+      & ol li{
+        display: flex;
+        gap: 10px;
+      }
     }
     .column-2 {
       width: 100%;
     }
   }
+
+
 
 `;
 
@@ -86,19 +93,19 @@ const ClientKnowHow = () => {
         <ol className="steps-to-report" style={{ listStyleType: "none" }}>
           <h3 className="text-secondary text-center mt-3">Steps to report a problem</h3>
           <li>
-            <img src="images/1.png" alt="One" width="44px" /> Lorem ipsum dolor
+            <img src="images/1.png" className="OneImage" alt="OneImage" width="44px" /> Lorem ipsum dolor
             sit amet consectetur!
           </li>
           <li>
-            <img src="images/2.png" alt="One" width="44px" /> Lorem, ipsum dolor
+            <img src="images/2.png" className="OneImage" alt="OneImage" width="44px" /> Lorem, ipsum dolor
             sit amet adipisicing.
           </li>
           <li>
-            <img src="images/3.png" alt="One" width="44px" /> Lorem ipsum dolor
+            <img src="images/3.png" className="OneImage" alt="OneImage" width="44px" /> Lorem ipsum dolor
             sit amet coelit.
           </li>
           <li>
-            <img src="images/4.png" alt="One" width="44px" /> Lorem ipsum dolor,
+            <img src="images/4.png" className="OneImage" alt="OneImage" width="44px" /> Lorem ipsum dolor,
             sit amet consectetu
           </li>
           {/* <li><img src="images/5.png" alt="One" width="44px" /> Lorem ipsum dolor sit amet consectetur.</li> */}
