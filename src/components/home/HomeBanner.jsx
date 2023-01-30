@@ -6,15 +6,15 @@ import { Link } from "react-router-dom";
 
 const HomeBannerStyle = styled.main`
   width: 100vw;
-  height: 95vh;
+  height: 100vh;
   background: #333;
   display: flex;
   gap: 1rem;
   position: relative;
 
   .report-img img{
-    width: 500px;
-    height: 500px;
+    width: 450px;
+    height: 450px;
     padding-bottom: 1rem;
   }
 
