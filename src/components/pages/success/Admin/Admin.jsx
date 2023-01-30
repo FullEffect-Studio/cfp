@@ -5,7 +5,7 @@ import AdminNavBar from './AdminNavBar'
 const AdminSuccessPage = () => {
   return (
     <div>
-        <AdminDashboardSidebar />
+      
     </div>
   )
 }
