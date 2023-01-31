@@ -7,8 +7,7 @@ import LandingPage from "./components/LandingPage";
 import ReportAProblem from "./components/report/MyReportAProblem";
 import "./index.css";
 import "leaflet/dist/leaflet.css";
-import BlankPage from "./BlankPage";
-import SocialWorkerNavBar from "./components/pages/success/social_worker/SocialWorkerNavBar";
+import SocialWorkerPage from "./components/pages/success/social_worker/SocialWorkerPage";
 
 export const ThemeTogglerContext = createContext(null);
 
@@ -30,7 +29,7 @@ export const App = () => {
               element={<PublicOfficerLoginForm />}
             />
             <Route path="/report-a-problem/" element={<ReportAProblem />} />
-            <Route path="/success/social-worker/" element={<SocialWorkerNavBar />} />
+            <Route path="/success/social-worker/" element={<SocialWorkerPage />} />
           </Routes>
         </Router>
       </ThemeTogglerContext.Provider>
