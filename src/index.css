@@ -6,8 +6,8 @@
 
 
 body{
-  height: 700px;
-  background: rgb(20, 20, 20) !important;
+  height: max-content;
+  /* background: rgb(20, 20, 20) !important; */
 }
 
 
