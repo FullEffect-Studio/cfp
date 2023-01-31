@@ -27,6 +27,12 @@ const ClientKnowHowStyle = styled.main`
         padding-bottom: 1rem;
       }
     }
+
+    & ol li{
+      display: flex;
+      gap: 10px;
+      align-items: center;
+    }
   }
 
   .report-img {

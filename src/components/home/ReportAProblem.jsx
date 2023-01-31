@@ -32,15 +32,14 @@ const ReportAProblemStyle = styled.div`
     }
 
     .paragraph-container {
-        width: 100%;
+      width: 100%;
     }
 
-    .report-container{
-        text-align: center;
-
+    .report-container {
+      text-align: center;
     }
-    .input{
-        display: none;
+    .input {
+      display: none;
     }
   }
 `;
@@ -72,24 +71,37 @@ const ReportAProblem = () => {
             (like graffiti, fly tipping, broken paving slabs, or street
             lighting)
           </h4>
-          <h5 className="text-center"><sup>**</sup>Enter a nearby postcode, or street name and area:</h5>
-          <h6 className="text-center">Like Cape Coast, UCC hospital, Ahwiaa road</h6>
+          <h5 className="text-center">
+            <sup>**</sup>Enter a nearby postcode, or street name and area:
+          </h5>
+          <h6 className="text-center">
+            Like Cape Coast, UCC hospital, Ahwiaa road
+          </h6>
           <div className="input" style={{ display: "flex" }}>
             <input
               className="form-control"
               type="text"
               style={{ height: "4rem", width: "80%" }}
-              placeholder = "Name of the place"
+              placeholder="Name of the place"
             />
             <input className="btn btn-dark" type="button" value="Go" />
           </div>
 
           <div className="text-center">
             <button
-              className="btn btn-dark text-center text-lg p-3 mt-4"
+              className="btn btn-dark text-center p-3 mt-4"
               type="submit"
+              style={{
+                width: "max-content",
+                display: "flex",
+                flexDirection: "row",
+                gap: "10px",
+                alignItems: "center",
+                height: "4rem",
+                margin: "auto"
+              }}
             >
-              Use My Current Location <FaLocationArrow />
+              Use My Current Location <FaLocationArrow size="20px" />
             </button>
           </div>
         </div>

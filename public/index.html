@@ -26,6 +26,7 @@
         box-sizing: border-box;
         /* font-family: "Poppins", sans-serif; */
       }
+      
 
       ::-webkit-scrollbar-track {max-height: 10%; height: 20%;}
 
@@ -66,5 +67,16 @@
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
+    <script>
+      $(function (){
+        $(window).scroll(function(){
+          if($(this).scrollTop() < 50){
+            $("nav").removeClass("top")
+          }else{
+            $("nav").addClass("top")
+          }
+        })
+      })
+    </script>
   </body>
 </html>

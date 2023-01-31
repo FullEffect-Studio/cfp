@@ -6,8 +6,21 @@
 
 
 body{
-  height: 700px;
-  background: rgb(20, 20, 20) !important;
+  height: max-content;
+  /* background: rgb(20, 20, 20) !important; */
+}
+
+.sw-section{
+  background-image: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)), url(../public/images/hero_bg.jpg);
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed
+
+}
+
+.top{
+  background-color: teal !important;
 }
 
 
