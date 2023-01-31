@@ -5,7 +5,9 @@ import PageFooter from "./PageFooter";
 
 const LandingPageStyle = styled.main`
   width: 100vw;
-  height: 100vh;
+  height: max-content;
+  background: black;
+  
 `;
 
 const LandingPage = () => {
