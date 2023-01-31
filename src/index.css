@@ -19,6 +19,10 @@ body{
 
 }
 
+.top{
+  background-color: teal !important;
+}
+
 
 @tailwind base;
 @tailwind components;

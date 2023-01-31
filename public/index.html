@@ -66,5 +66,16 @@
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
+    <script>
+      $(function (){
+        $(window).scroll(function(){
+          if($(this).scrollTop() < 50){
+            $("nav_sw").removeClass("top")
+          }else{
+            $("nav_sw").addClass("top")
+          }
+        })
+      })
+    </script>
   </body>
 </html>
