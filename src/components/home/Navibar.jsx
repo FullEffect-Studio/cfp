@@ -4,7 +4,6 @@ import Navbar from "react-bootstrap/Navbar";
 import NavDropdown from "react-bootstrap/NavDropdown";
 import { Link, useNavigate } from "react-router-dom";
 import styled from "styled-components";
-import {FaSun,FaMoon} from "react-icons/fa"
 import { useContext } from "react";
 import { ThemeTogglerContext } from "../../App";
 

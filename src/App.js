@@ -5,7 +5,7 @@ import CommnityWorkerLoginForm from "./components/Auth/CommnityWorkerLoginForm";
 import PublicOfficerLoginForm from "./components/Auth/PublicOfficerLoginForm";
 import LandingPage from "./components/LandingPage";
 import ReportAProblem from "./components/report/MyReportAProblem";
-import "./index.css";
+import "./index.scss";
 import "leaflet/dist/leaflet.css";
 import SocialWorkerPage from "./components/pages/success/social_worker/SocialWorkerPage";
 
